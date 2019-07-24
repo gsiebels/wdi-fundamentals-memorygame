@@ -1,0 +1,23 @@
+body{
+			text-align: center;
+			background: #696464;
+	}
+	a{
+			text-decoration: none;
+			font-size: 30px;
+			
+	}
+	h1{
+			font-family: 'Fascinate', cursive;
+		
+	}
+	h2{
+			font-weight: 400;
+			font-family: "Courier New", monospace;
+	}
+	h3{
+			font-family: "curier New", monospace;
+	}
+	.important{
+			font-size: 20px
+	}	
