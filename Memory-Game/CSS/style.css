@@ -1,122 +1,128 @@
+
+
+
 body{
-			text-align: center;
-			margin: 0;
+		text-align: center;
+		margin: 0;
+}
 
-	}
-
-	header{
+header{
 		background-color: #f15b31;
 		color:#ffffff;
 		padding: 30px 20px;
 		margin: 0;
-	
-	}
+}
 
-	nav{
-			background-color: #00a6b3;
-			color: #ffffff;
-			padding:20px;
-			border-bottom: 2px solid transparent;
-			text-transform: uppercase;
+nav{
+		background-color: #00a6b3;
+		color: #ffffff;
+		padding:20px;
+		border-bottom: 2px solid transparent;
+		text-transform: uppercase;
+}
 
-	}
+a{
+		text-decoration: none;
+		font-size: 18px;
+		font-family: "Raleway", sans-serif;
+		color: #ffffff;
+		letter-spacing: 1px;
+		margin: 20px;
+		border-bottom: 2px solid transparent;
+		text-transform: uppercase;
+}
 
-	a{
-			text-decoration: none;
-			font-size: 18px;
-			font-family: "Raleway", sans-serif;
-			color: #ffffff;
-			font-weight: 600;
-			letter-spacing: 1px;
-			margin: 20px;
-			border-bottom: 2px solid transparent;
-			text-transform: uppercase;
-	}
+/* :hover When you hover you mouse on the "a" they will turn in to a different colour, you can add more preperties*/
 
-	a:hover {
+a:hover {
 		color: #f15b31;
 		text-decoration: none;
+}
 
-	}
+main{
+		width: 850px;
+		margin: 35px auto;
+		padding: 0 5%;
+}
 
-	main{
-			width: 850px;
-			margin: 35px auto;
-			padding: 0 5%
-
-	}
-
-	h1{
+h1{
 		font-family: "Raleway", sans-serif;
 		font-weight: 400;
 		font-size: 45px;
 		letter-spacing: 2px;
 		margin: 0;
+}
 
-	}
+h2{
+		font-weight: 600;
+		font-family: "Raleway", sans-serif;
+		letter-spacing: 1px;
+		color: #0d2c40;
+		font-size: 25px;
+}
 
-	h2{
-			font-weight: 600;
-			font-family: "Raleway", sans-serif;
-			letter-spacing: 1px;
-			color: #0d2c40;
-			font-size: 25px;
-	}
+h3{
+		font-family: "Raleway", sans-serif;
+		color: #f15b31;
+		letter-spacing: 1px;
+		font-weight: 600;
+		font-size: 18px;
+}
 
-	h3{
-			font-family: "Raleway", sans-serif;
-			color: #f15b31;
-			letter-spacing: 1px;
-			font-weight: 600;
-			font-size: 18px;
-	}
+p{
+		font-family: "Droid Serif", serif;
+		line-height: 26px;
+		font-size: 18px;
+}
 
-	p{
-			font-family: "Droid Serif", serif;
-			line-height: 26px;
-			font-size: 18px;
-
-	}
-
-  footer{
-      text-transform: uppercase;    
-      padding: 10px;
-      background-color: #0d2c40;
-      color: white;
-      font-size: 14px;
-      letter-spacing: .08em;
-      font-weight: 500;
-      font-family: "Raleway" sans-serif;
-
-  }
-	.important{
-			font-size: 25px;
-	
-  }
-
-	.copyright{
+footer{
+		text-transform: uppercase;    
+		padding: 10px;
+		background-color: #0d2c40;
+		color: white;
+		font-size: 14px;
+		letter-spacing: .08em;
+		font-weight: 500;
 		font-family: "Raleway" sans-serif;
+}
+
+button{
+		padding: 5px 20px;
+		background-color: #f15b31;
+		border: 0px;
+		font-family: "Raleway", sans-serif;
+		font-size: 20px;
+		color: #ffffff;
+
+}
+
+/* IDs and Classes style */
+
+.important{
+		font-size: 10px, 10px;
+}
+
+.copyright{
+		font-family: "Raleway", sans-serif;
 		float: left;
+}
 
-	}
-
-	.message{
-		font-family: "Raleway" sans-serif;
+.message{
+		font-family: "Raleway", sans-serif;
 		float: right;
+}
 
-	}
-
-	.name{
-		color: #f15b31
+.name{
+		color: #f15b31;
 		font-weight: 700;
+}
 
-	}
-	.clearfix:after {
+.clearfix:after {
 		visibility: hidden;
 		display: block;
 		content: " ";
 		clear: both;
 		height: 0;
 		font-size: 0; 
-	}
+}
 	

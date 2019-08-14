@@ -4,54 +4,73 @@
 
 var cards = [
 	{
-	rank: "queen",
-	suit: "hearts",
-	cardImage: "image/queen-of-hearts.png"
+		rank: "queen",
+		suit: "hearts",
+		cardImage: "images/queen-of-hearts.png"
 	},
 	{
-	rank: "queen",
-	suit: "diamonds",
-	cardImage: "image/queen-of-diamonds.png"
+		rank: "queen",
+		suit: "diamonds",
+		cardImage: "images/queen-of-diamonds.png"
 	},
 	{
-	rank: "king",
-	suit: "hearts",
-	cardImage: "image/king-of-hearts.png"
+		rank: "king",
+		suit: "hearts",
+		cardImage: "images/king-of-hearts.png"
 	},
 	{
-	rank: "king",
-	suit: "diamonds",
-	cardImage: "image/king-of-diamonds.png"
-	},
-]
+		rank: "king",
+		suit: "diamonds",
+		cardImage: "images/king-of-diamonds.png"
+	}
+];
 
 var cardsInPlay = [];
 
+// This checks if the cards are iqual and displays an alert based on the cards picked.
 var checkForMatch = function(){
-	if (cardsInPlay[0] === cardsInPlay[1]) {
+		if (cardsInPlay[0] === cardsInPlay[1]) {
 		alert("You found a match!");
 	} else {
 		alert("Sorry!, try again");
 	}
+};
+
+//Flip when clickin on card.
+var flipCard = function () {
+	
+	var cardID = this.getAttribute('data-id');
+	console.log(cardID);
+	cardsInPlay.push(cards[cardID].rank);
+	this.setAttribute('src', cards[cardID].cardImage);
+		console.log(cards[cardID].cardImage);
+		console.log(cards[cardID].suit)
+
+		if (cardsInPlay.length === 2) {
+		checkForMatch();
+
+		cardsInPlay =[];
+	}
 
 };
 
+//replacing the board from HTML so it can be manipuolated.
+var createBoard = function() {
 
-var flipCard = function(cardId){
-	console.log("User flipped " + cards[cardId].rank);
-	cardsInPlay.push(cards[cardId].rank)
-	checkForMatch();
-	console.log(cards[cardId].cardImage);
-	console.log(cards[cardId].suit);
-};
+	for (var i = 0; i < cards.length; i++) {
 
-flipCard(0);
-flipCard(2);
+		var cardElement = document.createElement('img');
 
+		cardElement.setAttribute('src', "images/back.png");
+		cardElement.setAttribute('data-id', i);
+		cardElement.addEventListener('click', flipCard);
 
+		document.getElementById('game-board').appendChild(cardElement);
+  }
 
+}
 
-
+createBoard();
 
 
 
